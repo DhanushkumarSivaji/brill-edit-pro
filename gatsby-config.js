@@ -5,6 +5,18 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve:'@prismicio/gatsby-source-prismic-graphql',
+      options:{
+        repositoryName:'dks-brill-edit-pro',
+        pages:[{
+          type:'Page', //Name of the custom type that we created (**Starts with caps)
+          match:'/:uid',
+          path: '/',
+          component: require.resolve('./src/template/page.js')
+        }]
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
