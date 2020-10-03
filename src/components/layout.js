@@ -40,6 +40,12 @@ const navigationQuery = graphql`
                   uid
                 }
               }
+              ... on PRISMIC_Contact_page {
+                form_title
+                _meta {
+                  uid
+                }
+              }
             }
             label
           }

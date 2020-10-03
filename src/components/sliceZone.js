@@ -10,7 +10,6 @@ const SliceZone = ({ body }) => {
         <div>
             {body.map((bodyContent, i) => {
                 if (bodyContent.type === 'hero') {
-                    console.log(bodyContent)
                     return (
                         <Hero
                             title={bodyContent.primary.hero_title}

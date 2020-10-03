@@ -63,7 +63,6 @@ export const query = graphql `
 `
 
 const IndexPage = (props) => {
-    console.log("props",props)
   return(
 
   <Layout>
